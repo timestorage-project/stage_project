@@ -1,5 +1,5 @@
 import { html, render } from 'lit-html';
-import { test_app_backend } from 'declarations/test_app_backend';
+import { stage_project_backend } from 'declarations/stage_project_backend';
 import logo from './logo2.svg';
 
 class App {
@@ -12,7 +12,7 @@ class App {
   #handleSubmit = async (e) => {
     e.preventDefault();
     const name = document.getElementById('name').value;
-    this.greeting = await test_app_backend.greet(name);
+    this.greeting = await stage_project_backend.greet(name);
     this.#render();
   };
 

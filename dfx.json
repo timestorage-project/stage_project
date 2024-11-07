@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "test_app_backend": {
-      "candid": "src/test_app_backend/test_app_backend.did",
-      "package": "test_app_backend",
+    "stage_project_backend": {
+      "candid": "src/stage_project_backend/stage_project_backend.did",
+      "package": "stage_project_backend",
       "type": "rust"
     },
-    "test_app_frontend": {
+    "stage_project_frontend": {
       "dependencies": [
-        "test_app_backend"
+        "stage_project_backend"
       ],
       "source": [
-        "src/test_app_frontend/dist"
+        "src/stage_project_frontend/dist"
       ],
       "type": "assets",
-      "workspace": "test_app_frontend"
+      "workspace": "stage_project_frontend"
     }
   },
   "defaults": {
